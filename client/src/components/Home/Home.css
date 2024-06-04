@@ -1,0 +1,250 @@
+.banner {
+  background-image: url("../../images/shoes\ 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 96vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.banner-content {
+  width: 100vmax;
+  height: 100vmax;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.banner-content>h1 {
+  margin: 7vmax;
+  font: 500 6vmax "Roboto";
+  text-shadow: 2px 2px 8px #000000;
+}
+
+.banner-content>h1>span {
+  color: #336eec;
+}
+
+.banner-content>p {
+  font: 400 5vmax "Lucida Sans";
+  text-shadow: 2px 2px 8px #000000;
+  margin-bottom: 5vmax;
+}
+
+.banner-content>p>span {
+  color: #336eec;
+}
+
+.banner-content>a>button {
+  margin-top: 1vmax;
+  margin-bottom: 5vmax;
+  cursor: pointer;
+  background-color: #336eec;
+  border: 1px solid #412E27;
+  border-radius: 15px;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 600 1vmax "Roboto";
+  color: #EBE6DF;
+}
+
+.banner-content>a>button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #336eec;
+  font: 600 1vmax "Roboto";
+  border: 2px solid #336eec;
+}
+
+.banner::before {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: #EBE6DF;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  clip-path: polygon(100% 80%, 50% 100%, 100% 100%);
+  max-width: 100%;
+  z-index: 5;
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: #EBE6DF;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  clip-path: polygon(0 20%, 50% 0, 0 0);
+  max-width: 100%;
+  z-index: 5;
+}
+
+
+.homeHeading {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: #412E27;
+}
+
+.toProductsBtn {
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  background-color: #336eec;
+  font: 500 0.9vmax "Roboto";
+  border-radius: 20px;
+  padding: 0.5vmax 2vmax;
+  margin-top: 1vmax;
+  margin-left: calc(50% - (100px));
+  outline: none;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 60vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #412E27;
+  margin: 20px;
+  transition: all 0.5s;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #a7badd;
+}
+
+.productCard .imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.productCard .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.productCard>div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.productCard>p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+#pna{
+  display: flex;
+}
+button{
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  background-color: #336eec;
+  font: 500 0.7vmax "Roboto";
+  border-radius: 20px;
+  width: fit-content;
+  padding: 5px;
+  bottom: 0%;
+  outline: none;
+  margin-left: 5px;
+}
+
+.productCard>span {
+  margin: 0.5vmax;
+  color: #336eec;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px #336eec;
+  transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    height: 90vmin;
+  }
+
+  .banner-content {
+    width: 100vmin;
+    height: 100vmin;
+  }
+
+  .banner-content>h1 {
+    margin-top: 8vmax;
+    font: 500 5vmax "Roboto";
+  }
+
+  .banner-content>p {
+    margin-bottom: 3vmax;
+    font: 500 3vmax "Roboto";
+  }
+
+  .banner-content>a>button {
+    font: 600 1.5vmax "Roboto";
+  }
+
+  .productCard>p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard>div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard>span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard>div>span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+
+  .toProductsBtn {
+    font: 500 2.9vmax "Roboto";
+  }
+}
